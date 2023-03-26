@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner-bg {
+    background-image: url('./assets/imgs/section-main/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;  
 }
+.info-bg {
+    box-sizing: border-box;
+    background-image: url('./assets/imgs/investment-property/investment-property.png');
+    background-size: cover;
+      /*background-size: contain;*/
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+    @media (max-width: 768px){
+      .banner-bg {
+        background-image: url('./assets/imgs/section-main/main-mobile.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        text-align: center;
+        
+    }
+  
+    .info-bg {
+      background-image: url('./assets//imgs/investment-property/investment-property-mobile.png');
+      background-size: cover;
+      /*background-size: contain;*/
+  
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+      }
+    }
+    .widthSliderItem {
+      width: 260px!important;
+      
+    }
+    .slick-slide {
+      width: 260px!important;
+      margin-left: 0;
+      margin-right: 20px;
+    }
+
+  .slick-list {
+    margin-left: calc((100% - 91.6%) / 2) !important;
+    @media (max-width: 1280px) {
+      margin-left: calc((100% - 89%) / 2) !important;
+    }
+    @media (max-width: 1440px) {
+      margin-left: calc((100% - 94%) / 2) !important;
+    }
+  }
+  .slick-track {
+    margin-left: calc((100% - 91%));
+    @media (max-width: 1280px) {
+      margin-left: calc((100% - 89%)) !important;
+    }
+    @media (max-width: 1440px) {
+      margin-left: calc((100% - 94%)) !important;
+    }
+  }
+
