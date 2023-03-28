@@ -16,7 +16,37 @@ export const sliderList = [
         {
             title: 'Thessaloniki',
             text: 'objects',
-            count: 105,
+            count: 10,
             sliderImg: sliderImg2
+        }, 
+        {
+            title: 'Patras',
+            text: 'objects',
+            count: 5,
+            sliderImg: sliderImg3
+        }, 
+        {
+            title: 'Chania',
+            text: 'objects',
+            count: 15,
+            sliderImg: sliderImg4
+        }, 
+        {
+            title: 'Heraklion',
+            text: 'objects',
+            count: 105,
+            sliderImg: sliderImg5
+        }, 
+        {
+            title: 'Rhodes',
+            text: 'objects',
+            count: 105,
+            sliderImg: sliderImg6
+        }, 
+        {
+            title: 'Thessaloniki',
+            text: 'objects',
+            count: 105,
+            sliderImg: sliderImg1
         }, 
 ]

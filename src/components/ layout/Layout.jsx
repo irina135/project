@@ -1,4 +1,5 @@
-import Header from "./header/Header.js"
+import Header from "../ui/header/Header"
+
 
 
 const Layout = ({children}) => {

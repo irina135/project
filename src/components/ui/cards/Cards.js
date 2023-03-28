@@ -7,7 +7,7 @@ function CardItem(props) {
     if (props.cartVertical){
         return (
            /* <button onClick={() => {navigate('/pageCard') }} className="relative tablet:w-[48.8%] w-[300px] tablet:mr-[0px] mr-[20px] text-left pb-10">*/
-                <div>
+                <div className='mb-10'>
                     <Link to={`/user/${props.index + 1}`} className="relative tablet:w-[48.8%] w-[300px] tablet:mr-[0px] mr-[20px] text-left pb-10">
                         <img className="w-[100%] tablet:mb-[23px] mb-[15px]" src={props.cardImg} alt='img'/>
                         <div className="max-w-[350px]">

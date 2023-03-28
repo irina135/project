@@ -1,79 +1,43 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import sliderImg1 from "../../../assets/imgs/slider/slider-img1.png"
-import sliderImg2 from "../../../assets/imgs/slider/slider-img2.png"
-import sliderImg3 from "../../../assets/imgs/slider/slider-img3.png"
-import sliderImg4 from "../../../assets/imgs/slider/slider-img4.png"
-import sliderImg5 from "../../../assets/imgs/slider/slider-img5.png"
-import sliderImg6 from "../../../assets/imgs/slider/slider-img6.png"
 
 import {sliderList} from '../../../mocks/slider/data.base.slider'
 
-
-export default class AdaptiveHeight extends Component {
+import SliderItem from "./SliderItem";
+export default class SliderList extends Component {
   
   render() {
+    const map1 = sliderList
+    const newMap1 = map1.map((number, index) =>
+      <SliderItem key={index}
+      sliderImg={number.sliderImg}     
+      title={number.title}
+      count={number.count}
+      text={number.text}
+      />
+    )
     var settings = {
       loop: true,
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 6.77,
       slidesToScroll: 1,
-      adaptiveHeight: true,
-      afterChange: function(index) {
+      //adaptiveHeight: true,
+      /*afterChange: function(index) {
         console.log(
           `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
         )
         index = 0
-    }
+    }*/
 }
     return (
       <div>
-        <Slider {...settings}>
-        <div className="widthSliderItem">
-            <img src={sliderImg1} alt="img"/>
-            <p>1</p>
-          </div>
-          <div className="widthSliderItem">
-            
-            <img src={sliderImg2} alt="img"/>
-            <p>2</p>
-          </div>
-          <div className="widthSliderItem]">
-           
-          <img src={sliderImg3} alt="img"/>
-          <p>3</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg4} alt="img"/>
-          <p>4</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg5} alt="img"/>
-          <p>5</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg6} alt="img"/>
-          <p>6</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg2} alt="img"/>
-          <p>7</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg5} alt="img"/>
-          <p>5</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg6} alt="img"/>
-          <p>6</p>
-          </div>
-          <div className="widthSliderItem">
-          <img src={sliderImg2} alt="img"/>
-          <p>7</p>
-          </div>
+        <Slider {...settings} className='mb-[160px]'>
+          {newMap1}
         </Slider>   
      </div>
     );
   }
 }
+
+
