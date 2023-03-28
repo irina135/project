@@ -11,7 +11,7 @@ import {pageCard} from '../../../mocks/pageCard/data.base.pageCard'
 import {description} from '../../../mocks/pageCard/data.base.pageCard'
 import {details} from '../../../mocks/pageCard/data.base.pageCard'
 
-function PageCard(){
+const PageCard = () => {
     const params = useParams();
     const prodId = params.id;
     const navigate = useNavigate()
@@ -33,7 +33,7 @@ function PageCard(){
     )
 
     return (
-       <Layout>
+       <>
         <hr className="mb-5"/>
             <div className="desktop:max-w-[91.6%] laptop:max-w-[94%] max-w-[89%] mx-auto">
                 <div className="flex flex-wrap">
@@ -95,19 +95,7 @@ function PageCard(){
             </div>
             <Footer />
             <button onClick={() => {navigate('/')}}>BUTTON</button>
-        </Layout>
-       /* <Layout>
-            PageCard
-            <p>
-          <strong>User ID: </strong>
-          
-        </p>
-        <p>
-          <strong>User Name: </strong>
-          {pageCard[prodId-1].commission}lll
-          {prodId}
-        </p>
-        </Layout>*/
+        </>
     )
 }
 export default PageCard

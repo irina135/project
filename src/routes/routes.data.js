@@ -1,10 +1,10 @@
-import App from "../App"
 import PageCard from "../components/screens/pageCard/PageCard"
+import HomePage from "../components/screens/homePage/HomePage";
 
 export const routes = [
     {
         path: '/',
-        component: App,
+        component: HomePage,
         auth: false
     },
     /*{
