@@ -7,10 +7,14 @@ import sliderImg4 from "../../../assets/imgs/slider/slider-img4.png"
 import sliderImg5 from "../../../assets/imgs/slider/slider-img5.png"
 import sliderImg6 from "../../../assets/imgs/slider/slider-img6.png"
 
+import {sliderList} from '../../../mocks/slider/data.base.slider'
+
+
 export default class AdaptiveHeight extends Component {
+  
   render() {
     var settings = {
-        loop: true,
+      loop: true,
       dots: true,
       infinite: true,
       slidesToShow: 6.77,
@@ -20,12 +24,13 @@ export default class AdaptiveHeight extends Component {
         console.log(
           `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
         )
+        index = 0
     }
 }
     return (
-      
+      <div>
         <Slider {...settings}>
-          <div className="widthSliderItem">
+        <div className="widthSliderItem">
             <img src={sliderImg1} alt="img"/>
             <p>1</p>
           </div>
@@ -44,19 +49,31 @@ export default class AdaptiveHeight extends Component {
           <p>4</p>
           </div>
           <div className="widthSliderItem">
-          <img src={sliderImg1} alt="img"/>
+          <img src={sliderImg5} alt="img"/>
           <p>5</p>
           </div>
           <div className="widthSliderItem">
-          <img src={sliderImg2} alt="img"/>
+          <img src={sliderImg6} alt="img"/>
           <p>6</p>
           </div>
           <div className="widthSliderItem">
           <img src={sliderImg2} alt="img"/>
           <p>7</p>
           </div>
-        </Slider>
-     
+          <div className="widthSliderItem">
+          <img src={sliderImg5} alt="img"/>
+          <p>5</p>
+          </div>
+          <div className="widthSliderItem">
+          <img src={sliderImg6} alt="img"/>
+          <p>6</p>
+          </div>
+          <div className="widthSliderItem">
+          <img src={sliderImg2} alt="img"/>
+          <p>7</p>
+          </div>
+        </Slider>   
+     </div>
     );
   }
 }
