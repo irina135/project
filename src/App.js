@@ -1,6 +1,6 @@
 //import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 //import React, { useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+//import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Layout from './components/ layout/Layout';
 import Banner from './components/ui/banner/Banner';

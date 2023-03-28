@@ -22,6 +22,33 @@ export default class SliderList extends Component {
       infinite: true,
       slidesToShow: 6.77,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+
       //adaptiveHeight: true,
       /*afterChange: function(index) {
         console.log(
