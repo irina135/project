@@ -12,9 +12,7 @@ const Router = () => {
                         element={<route.component />}
                     />
                 ))}
-                
             </Routes>
-        
         </BrowserRouter>
     )
 }

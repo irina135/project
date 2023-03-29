@@ -1,13 +1,14 @@
-import Header from "../ui/header/Header"
+import  React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from "../ui/header/Header";
 
+const Layout = () => {
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
+};
 
-
-const Layout = ({children}) => {
-    return (
-        <div>
-            <Header />
-            {children}
-        </div>
-    )
-}
-export default Layout
+export default Layout;
