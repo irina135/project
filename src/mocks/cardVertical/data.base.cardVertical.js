@@ -33,7 +33,7 @@ export const cardListVertical = [
       terrace: 'terrace',
       price: '52 000'
     },
-    {
+    /*{
       id: 3,
       typeOfProperty: 'Apartment',
       city: 'Thessaloniki',
@@ -62,7 +62,7 @@ export const cardListVertical = [
       CCTV: 'CCTV',
       terrace: 'terrace',
       price: '620 000'
-    },
+    },*/
   ] 
 
   export default cardListVertical

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom'
-import Layout from "../../ layout/Layout"
+//import Layout from "../../ layout/Layout"
 import DescriptionItem from "../../ui/pageCard/DescriptionItem"
 import ShowMore from "../../ui/pageCard/ShowMore"
 import Profile from "../../ui/pageCard/Profile"

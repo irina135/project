@@ -89,12 +89,15 @@ bady {
 }
 
 .line {
-  padding-left: 30px;
+  padding-left: 8px;
   border-left: 1px solid rgba(45, 42, 38, 0.16);
 }
 .line:first-of-type {
   padding-left: 0;
   border-left: none;
+}
+.textHeight {
+  line-height: 1.5 !important;
 }
    
 

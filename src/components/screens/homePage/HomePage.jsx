@@ -21,9 +21,15 @@ const HomePage = () => {
   return (
     <>
       <Banner/>
-      <AdaptiveHeight />
+
       <TitleLink
         title={titleLink[0].title}
+        linkText={titleLink[0].linkText}
+        img1= {titleLink[0].img1}
+      />
+      <AdaptiveHeight />
+      <TitleLink
+        title={titleLink[1].title}
         linkText={titleLink[0].linkText}
         img1= {titleLink[0].img1}
       />
@@ -35,13 +41,14 @@ const HomePage = () => {
       />
 
       <Video />
+      <TitleLink
+        title={titleLink[2].title}
+        linkText={titleLink[0].linkText}
+        img1= {titleLink[0].img1}
+      />
       <CardsWrap />
       <Info />
       <Search />
-
-      {itemNumber &&
-        <Item itemNumber= {itemNumber}/>
-      }
 
       <Footer />
     </>
