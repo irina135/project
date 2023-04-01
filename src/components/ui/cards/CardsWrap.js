@@ -35,13 +35,16 @@ function CardsWrap(props) {
     if (props.displayFlex) {
 
         return (
-           <div className="flex truncate tablet:justify-between tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto desktop:mb-[142px] laptop:mb-[100px] tablet:mb-[120px] mb-[60px]">
-              {newCard}
+           <div className="flex tablet:justify-between tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] overflow-hidden slick-list mx-auto desktop:mb-[142px] laptop:mb-[100px] tablet:mb-[120px] mb-5">
+            <div className='flex tablet:justify-between'>
+            {newCard}
+            </div>
+              
            </div>
            )
         }
         return (
-          <div className="laptop:flex laptop:justify-between truncate laptop:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto desktop:mb-[118px] laptop:mb-[98px] tablet:mb-[140px] mb-[75px]">
+          <div className="laptop:flex laptop:justify-between truncate laptop:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto desktop:mb-[118px] laptop:mb-[98px] tablet:mb-[140px] mb-[65px]">
               {newCard}
            </div>
         )

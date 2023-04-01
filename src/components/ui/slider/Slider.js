@@ -59,7 +59,7 @@ export default class SliderList extends Component {
 }
     return (
       <div>
-        <Slider {...settings} className='laptop:mb-[120px] desktop:mb-[160px]'>
+        <Slider {...settings} className='laptop:mb-[120px] desktop:mb-[160px] mb-[60px]'>
           {newMap1}
         </Slider>   
      </div>

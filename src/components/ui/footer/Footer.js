@@ -27,12 +27,12 @@ function Footer(props) {
     return (
       
         <div className="tablet:flex desktop:pl-[10%] desktop:pb-[120px] pb-[100px] bg-[#2D2A26] medium:pl-[6.3%] pl-[10.6%] desktop:pt-[120px] tablet:pt-[100px] pt-[60px] text-white">
-          <div className="desktop:w-[53%] laptop:w-[46.6%] tablet: w-[43.4%] tablet-mb-[0px] mb-[60px]">
+          <div className="desktop:w-[53%] laptop:w-[46.6%] tablet: w-[43.4%] tablet-mb-[0px] mb-[50px]">
             <img className="mb-[19px]" src={footer[0].footerLogo} alt='img'/>
             <p className="tablet:w-[188px] w-[188px] text-left text-white/60 desktop:text-lg tablet:text-base tracking-wide textHeightFooter">{footer[0].footerText}</p>
           </div>
-          <div className="tablet:flex justify-start laptop:w-[46%] tablet:w-[55%]">
-            <div className="desktop:w-[44%] laptop:w-[60%] tablet:mb-[0px] mb-[51px] text-left">
+          <div className="tablet:flex justify-start medium:w-[46%] tablet:w-[55%]">
+            <div className="desktop:w-[44%] medium:w-[60%] tablet:mb-[0px] mb-[51px] text-left">
               <h4 className="mb-3 desktop:text-lg text-base font-normal text-white/60">{footer[0].footerTitle}</h4>
               {newFooterItemList1}
             </div>

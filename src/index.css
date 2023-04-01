@@ -28,6 +28,7 @@ bady {
     background-repeat: no-repeat;
     background-position: center;
 }
+/*Slider*/
 .slick-list {
   margin-left: calc((100% - 91%) / 2);
   }  
@@ -160,7 +161,12 @@ bady {
                   left: 85px;
                 }*/
     }
+    .slick-slide {
+      width: 140px !important;
+      margin-left: 10px;
+    }
 }
+
 
 
 
