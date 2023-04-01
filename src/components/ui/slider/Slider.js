@@ -24,10 +24,10 @@ export default class SliderList extends Component {
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1440,
+          breakpoint: 1920,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: false
           }
@@ -59,7 +59,7 @@ export default class SliderList extends Component {
 }
     return (
       <div>
-        <Slider {...settings} className='mb-[160px]'>
+        <Slider {...settings} className='laptop:mb-[120px] desktop:mb-[160px]'>
           {newMap1}
         </Slider>   
      </div>

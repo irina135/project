@@ -9,11 +9,11 @@ export const search = [
         searchItemImg: searchItemImg1
     },
     {
-        itemTitle: 'House',
+        itemTitle: 'Apartment',
         searchItemImg: searchItemImg2
     },
     {
-        itemTitle: 'House',
+        itemTitle: 'Commercial Real Estate',
         searchItemImg: searchItemImg3
     },
 ]
