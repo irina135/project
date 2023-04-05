@@ -6,6 +6,9 @@ import CardItem from './Cards'
 function CardsWrap(props) {
     let cardList1 = 0
     //let itemNumber1 = props.itemNumber
+   
+   // cardList1 = cardListVertical
+
     if (props.cartVertical) {
         cardList1 = cardListVertical
     } else {
@@ -35,7 +38,7 @@ function CardsWrap(props) {
     if (props.displayFlex) {
 
         return (
-           <div className="flex tablet:justify-between tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] overflow-hidden slick-list mx-auto desktop:mb-[142px] laptop:mb-[100px] tablet:mb-[120px] mb-5">
+           <div className="flex tablet:justify-between tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] overflow-hidden mx-auto desktop:mb-[142px] laptop:mb-[100px] tablet:mb-[120px] mb-5">
             <div className='flex tablet:justify-between'>
             {newCard}
             </div>

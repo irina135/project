@@ -1,4 +1,4 @@
-import pageCardArrow from '../../assets/imgs/propertyPage/arrow.svg'
+import pageCardArrow from '../../assets/imgs/propertyPage/arrowRight.svg'
 import reviewImg from '../../assets/imgs/propertyPage/heard.svg'
 import socialImg from '../../assets/imgs/propertyPage/link.svg'
 import pageCardImgMain from '../../assets/imgs/propertyPage/pageImgMain.png'
@@ -35,22 +35,23 @@ export const pageCard = [
         pageCardImgMain: pageCardImgMain,
         pageCardImg1: pageCardImg1,
         pageCardImg2: pageCardImg2,
-        text: ' next to the City Hall of the Royal Palace and the main street of Kralja Milan. A large house territory allows you to live in nature, being in the very center of the capital. Own SPA, swimming pool, sauna, relaxation area, grill. Enjoy the benefits of...',
-        textBtn: 'Show more',
+        text: 'Marshall, a cozy villa in the center of Belgrade, next to the City Hall of the Royal Palace and the main street of Kralja Milan. A large house territory allows you to live in nature, being in the very center of the capital. Own SPA, swimming pool, sauna, relaxation area, grill. Enjoy the benefits of being in the city center without being in the citybenefits of being in the city center without being benefits of being in the city center without being benefits of being in the city center without being  ',
+        textBtn1: 'Show more',
+        textBtn2: 'All details',
         arrow: pageCardArrow,
-        detailsTitle: 'Details1',
+        detailsTitle: 'Details',
         avatarImg: avatarImg,
-        profileName: 'Nebojsa Vukanovic1',
-        profileJob: 'Manager1',
-        profileMember: 'Member since1',
+        profileName: 'Nebojsa Vukanovic',
+        profileJob: 'Manager',
+        profileMember: 'Member since',
         profileMemberDate: 'August 2, 2022',
         profileMemberTerm: '5 years 8 months',
         profileLanguage: 'Language:',
         profileLanguageName: 'Greek, English',
-        profileBtnText: 'Contact1',
+        profileBtnText: 'Contact',
         profileImg: profileImg,
         profileNumber: 2,
-        profileObjects: 'objects1',
+        profileObjects: 'objects',
         seeAll: 'See all'
     },
     {
@@ -125,7 +126,7 @@ export const pageCard = [
         pageCardImgMain: pageCardImgMain,
         pageCardImg1: pageCardImg1,
         pageCardImg2: pageCardImg2,
-        text: 'Marshall, a cozy villa in the center of Belgrade, next to the City Hall of the Royal Palace and the main street of Kralja Milan. A large house territory allows you to live in nature, being in the very center of the capital. Own SPA, swimming pool, sauna, relaxation area, grill. Enjoy the benefits of...',
+        text: 'Marshall, a cozy villa in the center of Belgrade, next to the City Hall of the Royal Palace and the main street of Kralja Milan. A large house territory allows you to live in nature, being in the very center of the capital. Own SPA, swimming pool, sauna, relaxation area, grill. Enjoy the benefits of being in the city center without being in the city...',
         textBtn: 'Show more',
         arrow: pageCardArrow,
         detailsTitle: 'Details4',
