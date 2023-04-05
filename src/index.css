@@ -10,24 +10,7 @@ bady {
   font-family: Graphik, 'Open Sans';
   box-sizing: border-box !important;
 }
-.banner-bg {
-    background-image: url('./assets/imgs/section-main/main.png');
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    text-align: center;  
-   
-}
-/*Info*/
 
-.info-bg {
-    box-sizing: border-box;
-    background-image: url('./assets/imgs/investment-property/investment-property.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 /*Slider*/
 .slick-list {
   margin-left: calc((100% - 91%) / 2);
@@ -106,40 +89,15 @@ bady {
 
 
 @media (max-width: 1440px){
-  /*.banner-bg {
-    background-image: url('./assets/imgs/section-main/main1360.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    text-align: center;  
-}*/
+ 
     .slick-slide {
       width: 213px !important;
 }
-.plInfo {
-  padding-left: 53% !important;
-} 
+
 }
 
 @media (max-width: 768px){
-  .banner-bg {
-    background-image: url('./assets/imgs/section-main/main-mobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    text-align: center;  
-  }
 
-  .info-bg {
-    background-image: url('./assets//imgs/investment-property/investment-property-mobile.png');
-    background-size: cover;
-    /*background-size: contain;*/
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
-    }
     .header__links-wrap {
       left: calc(50% - (116px/2));
       width: 116px;
