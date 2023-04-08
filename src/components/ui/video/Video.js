@@ -16,7 +16,7 @@ function Video(props) {
                 {video[0].btnText}</button>
           </div>
           <div className="desktop:w-[63%] laptop:w-[60%]">
-            <img className="w-[100%] desktop:h-[auto] laptop:h-[481px] h-auto" src={video[0].videoImg} alt='img'/>
+            <img className="w-[100%] desktop:h-[auto] laptop:h-[481px] tablet:h-auto h-[209px]" src={video[0].videoImg} alt='img'/>
           </div>
        </div>
        )

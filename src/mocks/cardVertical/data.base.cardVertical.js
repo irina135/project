@@ -1,5 +1,9 @@
 import cardVerticalImg1 from '../../assets/imgs/best-object/best-object1.png'
 import cardVerticalImg2 from '../../assets/imgs/best-object/best-object2.png'
+import cardImgMobile1 from '../../assets/imgs/best-object/cardImgMobile1.png'
+import cardImgMobile2 from '../../assets/imgs/best-object/cardImgMobile2.png'
+import cardImgMobile3 from '../../assets/imgs/best-object/cardImgMobile3.png'
+import cardImgMobile4 from '../../assets/imgs/best-object/cardImgMobile4.png'
 
 
 export const cardListVertical = [
@@ -9,6 +13,7 @@ export const cardListVertical = [
       city: 'Thessaloniki',
       name: 'Mirò Dorcol',
       cardImg: cardVerticalImg1,
+      cardImgMobile: cardImgMobile1,
       area: 281,
       bedrooms: 4,
       bathrooms: 1,
@@ -24,6 +29,7 @@ export const cardListVertical = [
       city: 'Thessaloniki',
       name: 'Mirò Dorcol',
       cardImg: cardVerticalImg2,
+      cardImgMobile: cardImgMobile2,
       area: 300,
       bedrooms: 5,
       bathrooms: 2,
@@ -33,12 +39,13 @@ export const cardListVertical = [
       terrace: 'terrace',
       price: '52 000'
     },
-    /*{
+    {
       id: 3,
       typeOfProperty: 'Apartment',
       city: 'Thessaloniki',
       name: 'Mirò Dorcol',
       cardImg: cardVerticalImg1,
+      cardImgMobile: cardImgMobile3,
       area: 400,
       bedrooms: 6,
       bathrooms: 3,
@@ -54,6 +61,7 @@ export const cardListVertical = [
       city: 'Thessaloniki',
       name: 'Mirò Dorcol',
       cardImg: cardVerticalImg2,
+      cardImgMobile: cardImgMobile4,
       area: 281,
       bedrooms: 4,
       bathrooms: 1,
@@ -62,7 +70,71 @@ export const cardListVertical = [
       CCTV: 'CCTV',
       terrace: 'terrace',
       price: '620 000'
-    },*/
+    },
+    {
+      id: 5,
+      typeOfProperty: 'Apartment',
+      city: 'Thessaloniki',
+      name: 'Mirò Dorcol',
+      cardImg: cardVerticalImg1,
+      cardImgMobile: cardImgMobile4,
+      area: 281,
+      bedrooms: 4,
+      bathrooms: 1,
+      plot: 1,
+      furnished: 'furnished',
+      CCTV: 'CCTV',
+      terrace: 'terrace',
+      price: '620 000',
+    },
+    {
+      id: 6,
+      typeOfProperty: 'Apartment',
+      city: 'Thessaloniki',
+      name: 'Mirò Dorcol',
+      cardImg: cardVerticalImg1,
+      cardImgMobile: cardImgMobile2,
+      area: 281,
+      bedrooms: 4,
+      bathrooms: 1,
+      plot: 1,
+      furnished: 'furnished',
+      CCTV: 'CCTV',
+      terrace: 'terrace',
+      price: '620 000',
+    },
+    {
+      id: 7,
+      typeOfProperty: 'Apartment',
+      city: 'Thessaloniki',
+      name: 'Mirò Dorcol',
+      cardImg: cardVerticalImg1,
+      cardImgMobile: cardImgMobile3,
+      area: 281,
+      bedrooms: 4,
+      bathrooms: 1,
+      plot: 1,
+      furnished: 'furnished',
+      CCTV: 'CCTV',
+      terrace: 'terrace',
+      price: '620 000',
+    },
+    {
+      id: 8,
+      typeOfProperty: 'Apartment',
+      city: 'Thessaloniki',
+      name: 'Mirò Dorcol',
+      cardImg: cardVerticalImg1,
+      cardImgMobile: cardImgMobile1,
+      area: 281,
+      bedrooms: 4,
+      bathrooms: 1,
+      plot: 1,
+      furnished: 'furnished',
+      CCTV: 'CCTV',
+      terrace: 'terrace',
+      price: '620 000',
+    },
   ] 
 
   export default cardListVertical

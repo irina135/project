@@ -65,7 +65,7 @@ export const cardListHorizontal = [
       terrace: 'terrace',
       price: '620 000'
     },
-    /*{
+    {
       id: 5,
       typeOfProperty: 'Apartment',
       city: 'Thessaloniki',
@@ -124,7 +124,7 @@ export const cardListHorizontal = [
       CCTV: 'CCTV',
       terrace: 'terrace',
       price: '620 000'
-    },*/
+    },
   ] 
 
   export default cardListHorizontal

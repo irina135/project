@@ -1,5 +1,8 @@
 import PageCard from "../components/screens/pageCard/PageCard"
-import HomePage from "../components/screens/homePage/HomePage";
+import HomePage from "../components/screens/homePage/HomePage"
+import PageAllCardHorizontal from "../components/screens/pageAllCardHorizontal/PageAiiCardHoriontal"
+import PageAllCardVertical from "../components/screens/pageAllCardVertical/PageAllCardVertical"
+import PageAllAreas from "../components/screens/pageAllAreas/PageAllAreas"
 
 export const routes = [
     {
@@ -7,16 +10,24 @@ export const routes = [
         component: HomePage,
         auth: false
     },
-    /*{
-        path: '/pageCard',
-        component: PageCard,
+    {
+        path: '/PageAllCardHorizontal',
+        component: PageAllCardHorizontal,
         auth: false
-    },*/
+    },
+    {
+        path: '/PageAllCardVertical',
+        component: PageAllCardVertical,
+        auth: false
+    },
+    {
+        path: '/PageAllAreas',
+        component: PageAllAreas,
+        auth: false
+    },
    
     {
-        //path: '/users',
         path: '/user/:id',
-        /*component: BigCard,*/
         component: PageCard,
         auth: false
     },
