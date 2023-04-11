@@ -10,6 +10,18 @@ bady {
   font-family: Graphik, 'Open Sans';
   box-sizing: border-box !important;
 }
+/*pageAllCardHorizontal*/
+.pageAllCardHorizontalMl {
+  margin-left: calc((100% - 91%) / 2);
+}
+.pageAllCardHorizontalScroll {
+  height: calc(100vh - 70px);
+    overflow: scroll;
+}
+.pageAllCardHorizontalHightFull {
+  height: calc(100vh - 70px);
+  overflow:hidden
+}
 
 /*Slider*/
 .slick-list {
@@ -84,6 +96,9 @@ bady {
   .slick-list {
     margin-left: calc((100% - 1760px) / 2) !important;
   }  
+  .pageAllCardHorizontalMl {
+    margin-left: calc((100% - 1760px) / 2);
+  }
  
 }
 

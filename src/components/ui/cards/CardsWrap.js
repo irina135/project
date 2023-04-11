@@ -2,18 +2,17 @@ import cardListVertical from '../../../mocks/cardVertical/data.base.cardVertical
 import cardListHorizontal from '../../../mocks/cardHorizontal/data.base.cardHorizontal'
 import CardItem from './Cards'
 
-
 function CardsWrap(props) {
-    let cardList1 = 0
-    let a = props.p
-   
-    if (props.cartVertical || props.pageAllCardVertical) {
-        cardList1 = cardListVertical
+    let cardList = 0
+    let a = props.constSwitchCardWrap
+    
+    if (props.pageHomeCardVertical || props.pageAllCardVertical) {
+        cardList = cardListVertical
     } else {
-        cardList1 = cardListHorizontal
+        cardList = cardListHorizontal
     }
     
-    const newCard = cardList1.map((number,index) =>
+    const newCard = cardList.map((number,index) =>
     <CardItem key={index}
     typeOfProperty={number.typeOfProperty}
     city={number.city}
@@ -29,83 +28,38 @@ function CardsWrap(props) {
     CCTV={number.CCTV}
     terrace={number.terrace}
     price={number.price}
-    cartVertical={props.cartVertical}
+    pageHomeCardVertical={props.pageHomeCardVertical}
     index={index}
     pageAllCardVertical={props.pageAllCardVertical}
-    vvv={props.vvv}
+    constSwitchCard={props.constSwitchCard}
     />
-    
     )
 
     switch(a){
-        case 'start':
-            return (
-                <div>switch vvvvv</div>
-            );
-            
-        
-        case 'pageAllCardVertical':
+        case 'pageAllCardVerticalWrap':
             return (
                 <div className='tablet:flex tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto'>
-                    
-                        {newCard}
-                </div>);
-            
-        case 'displayFlex1':
+                    {newCard}
+                </div>
+            );  
+        case 'pageHomeCardVerticalWrap':
             return (
                 <div className="flex tablet:justify-between tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] overflow-hidden mx-auto desktop:mb-[142px] laptop:mb-[100px] tablet:mb-[120px] mb-5">
-                 
-                 {newCard}
-                
-                   
+                    {newCard} 
                 </div>
-                )
-        case 'cardHorizontal':
+            );
+        case 'pageHomeCardHorizontalWrap':
             return (
                 <div className=" laptop:flex laptop:justify-between truncate laptop:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto desktop:mb-[118px] laptop:mb-[98px] tablet:mb-[140px] mb-[65px]">
                     {newCard}
                  </div>
-              )        
-
-    }
-
-
-
-    /*if (props.displayFlex) {
-
-        return (
-           <div className="flex tablet:justify-between tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] overflow-hidden mx-auto desktop:mb-[142px] laptop:mb-[100px] tablet:mb-[120px] mb-5">
-            
-            {newCard}
-           
-              
-           </div>
-           )
-        }
-
-        else {
-            if (props.pageAllCardVertical){
-                return (
-                    <div className='tablet:flex tablet:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto'>
-                        
-                            {newCard}  
-              
-                    </div>
-                )
-
-            } else {
-                return (
-                    <div className=" laptop:flex laptop:justify-between truncate laptop:flex-wrap desktop:w-[91.6%] desktop:max-w-[1760px] laptop:max-w-[94%] max-w-[89%] mx-auto desktop:mb-[118px] laptop:mb-[98px] tablet:mb-[140px] mb-[65px]">
-                        {newCard}
-                     </div>
-                  )
-            }
-        }*/
-
-    
-
-
-
-        
+            );  
+        case 'pageAllCardHorizontalWrap':
+            return(
+                <div>
+                    {newCard}
+                </div>
+            )          
+    }       
 }
 export default CardsWrap
