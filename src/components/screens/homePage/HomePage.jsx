@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 import Banner from "../../ui/banner/Banner";
 import AdaptiveHeight from "../../ui/slider/Slider";
@@ -8,39 +8,39 @@ import Video from "../../ui/video/Video";
 import Info from "../../ui/info/Info";
 import Search from "../../ui/search/Search";
 import Footer from "../../ui/footer/Footer";
-import {titleLink} from "../../../mocks/titleLink/data.base.titleLink";
+import { titleLink } from "../../../mocks/titleLink/data.base.titleLink";
 
 /* такие константы лучше выносить за компонент или в отдельный файл,
  что бы они не создавались каждый раз при отрисовке компонента*/
 //const cartVertical = true
 
-const pagePathHorizontalCard = true
-const pageAllCardVertical = true
-const pageAllAreas = true
+const pagePathHorizontalCard = true;
+const pageAllCardVertical = true;
+const pageAllAreas = true;
 
-const pageHomeCardVertical = 'pageHomeCardVertical'
-const pageHomeCardHorizontal = 'pageHomeCardHorizontal'
-const pageHomeCardVerticalWrap = 'pageHomeCardVerticalWrap'
-const pageHomeCardHorizontalWrap = 'pageHomeCardHorizontalWrap'
+const pageHomeCardVertical = "pageHomeCardVertical";
+const pageHomeCardHorizontal = "pageHomeCardHorizontal";
+const pageHomeCardVerticalWrap = "pageHomeCardVerticalWrap";
+const pageHomeCardHorizontalWrap = "pageHomeCardHorizontalWrap";
 
 const HomePage = () => {
-  const [itemNumber, setIsShow] = useState(true)
+  const [itemNumber, setIsShow] = useState(true);
 
   return (
     <>
-      <Banner/>
+      <Banner />
       <TitleLink
         pageAllAreas={pageAllAreas}
         title={titleLink[0].title}
         linkText={titleLink[0].linkText}
-        img1= {titleLink[0].img1}
+        img1={titleLink[0].img1}
       />
       <AdaptiveHeight />
       <TitleLink
         pageAllCardVertical={pageAllCardVertical}
         title={titleLink[1].title}
         linkText={titleLink[0].linkText}
-        img1= {titleLink[0].img1}
+        img1={titleLink[0].img1}
       />
       <CardsWrap
         pageHomeCardVertical={pageHomeCardVertical}
@@ -52,11 +52,11 @@ const HomePage = () => {
         pagePathHorizontalCard={pagePathHorizontalCard}
         title={titleLink[2].title}
         linkText={titleLink[0].linkText}
-        img1= {titleLink[0].img1}
+        img1={titleLink[0].img1}
       />
-      <CardsWrap 
-      constSwitchCardWrap={pageHomeCardHorizontalWrap}
-      constSwitchCard={pageHomeCardHorizontal}
+      <CardsWrap
+        constSwitchCardWrap={pageHomeCardHorizontalWrap}
+        constSwitchCard={pageHomeCardHorizontal}
       />
       <Info />
       <Search />
@@ -64,6 +64,6 @@ const HomePage = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default HomePage;

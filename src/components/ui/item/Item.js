@@ -1,6 +1,4 @@
 function Item(props) {
-    return (
-        <div>Itemhhhhhhhhhhh</div>
-    )
+  return <div>Itemhhhhhhhhhhh</div>;
 }
-export default Item
+export default Item;

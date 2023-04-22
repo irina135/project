@@ -1,6 +1,4 @@
 function ItemWrap(props) {
-    return (
-        <div>Wrap</div>
-    )
+  return <div>Wrap</div>;
 }
-export default ItemWrap
+export default ItemWrap;
